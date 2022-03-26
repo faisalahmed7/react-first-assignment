@@ -1,14 +1,13 @@
 .shop-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
-margin-bottom: 100px;
+    margin-bottom: 100px;
     
 }
 
 .books-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    background-color: azure;
     gap: 30px;
     margin-top: 80px;
     margin-left: 50px;
@@ -17,4 +16,14 @@ margin-bottom: 100px;
     margin-top: 78px;
     background-color: #E6E6FA;
     
+}
+
+@media only screen and (max-width: 576px) {
+    .shop-container{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .books-container{
+      grid-template-columns: repeat(1, 1fr);
+    }
 }
