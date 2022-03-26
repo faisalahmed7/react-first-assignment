@@ -14,9 +14,9 @@ const Book = ({book, handleCart }) => {
           <img src={image} alt="" />
 
           <div className='book-info'>
-          <p>{title}</p>
-          <p>Isbn No: {isbn13}</p>
-          <p>Price: {price}</p>
+          <p className='book-name'>{title}</p>
+          <p className='isbn-no'>Isbn No: {isbn13}</p>
+          <p className='price'>Price: {price}</p>
           </div>
           <button onClick={()=>handleCart(book)} className='btn-cart'>
               <p>Add To Cart</p>

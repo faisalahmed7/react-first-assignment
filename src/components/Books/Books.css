@@ -1,13 +1,15 @@
 .shop-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
+margin-bottom: 100px;
     
 }
 
 .books-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 50px;
+    background-color: azure;
+    gap: 30px;
     margin-top: 80px;
     margin-left: 50px;
 }

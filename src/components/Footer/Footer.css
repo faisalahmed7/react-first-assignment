@@ -1,0 +1,13 @@
+.question-container{
+    text-align: center;
+}
+.que-ans{
+    border: none;
+    background-color: #E6E6FA;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 30px 15px;
+    font-size: 17px;
+    font-weight: 400;
+
+}

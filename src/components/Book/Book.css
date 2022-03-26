@@ -20,6 +20,21 @@
     margin-top: -10px;
     margin-left: 12px;
 }
+
+.book-name{
+    color:black;
+    font-size: 17px;
+    font-weight: 700;
+}
+.isbn-no{
+    color: red;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+.price{
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+}
 .btn-cart{
     position: absolute;
     bottom: 0;
