@@ -9,7 +9,7 @@ import Cart from '../Cart/Cart';
 const Books = () => {
     const [books, setBooks] = useState([])
     const [cart, setCart] = useState([])
- 
+    const [random, setRandom] = useState([]);
 
     useEffect(() => {
         fetch('data.json')
@@ -22,7 +22,20 @@ const Books = () => {
         setCart(newCart);
     }
 
-   
+    // Generate Random Data From Cart
+    const randDataShow = () => {
+        if (cart.length !== 0) {
+            const randomIndex = Math.floor(Math.random() * cart.length);
+            const item = cart[randomIndex];
+            setRandom([item]);
+        }
+    }
+
+    // Clear Data From Cart
+    const clearData = () => {
+        setCart([]);
+        setRandom([]);
+    }
 
     return (
         <div className='shop-container'>
@@ -33,7 +46,7 @@ const Books = () => {
             </div>
 
             <div className="cart-container">
-                <Cart cart={cart}></Cart>
+                <Cart clearData={clearData} rand={random} randDataShow={randDataShow} cart={cart}></Cart>
             </div>
 
         </div>
