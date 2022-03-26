@@ -1,7 +1,7 @@
 import './Books.css'
 
 import React, { useEffect, useState } from 'react';
-
+import Book from '../Book/Book';
 
 
 
@@ -27,7 +27,7 @@ const Books = () => {
         <div className='shop-container'>
             <div className='books-container'>
                 {
-                    books.map(book => console.log(book))
+                    books.map(book => <Book key={book.isbn13} book={book}  ></Book>)
                 }
             </div>
 
