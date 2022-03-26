@@ -2,7 +2,7 @@ import './Books.css'
 
 import React, { useEffect, useState } from 'react';
 import Book from '../Book/Book';
-
+import Cart from '../Cart/Cart';
 
 
 
@@ -33,7 +33,7 @@ const Books = () => {
             </div>
 
             <div className="cart-container">
-               
+                <Cart cart={cart}></Cart>
             </div>
 
         </div>
