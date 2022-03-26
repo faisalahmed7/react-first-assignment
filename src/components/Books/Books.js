@@ -20,7 +20,11 @@ const Books = () => {
 
     const handleCart = (book) => {
         const newCart = [...cart, book];
-        setCart(newCart);
+        if (newCart.length===5){
+          alert('Maximum 4 Books You can Choose')
+          return
+        }
+        setCart(newCart.slice(0,4));
     }
 
     // Generate Random Data From Cart
