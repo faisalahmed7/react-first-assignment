@@ -28,9 +28,9 @@ const Cart = ({ cart, randDataShow, rand, clearData }) => {
                 </div>
             </div>
             <div>
-                {/* Show Random Data */}
+                 {/* Show Random Data */}
                 {clicked && <div>
-                    {rand.map(data => <div>
+                    {rand.map(data => <div >
                         <p>{data.title}</p>
                     </div>)}
                 </div>}

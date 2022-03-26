@@ -18,6 +18,8 @@ const Books = () => {
             .then(data => setBooks(data))
     }, [])
 
+    /* Maximum 4 Books Add */
+
     const handleCart = (book) => {
         const newCart = [...cart, book];
         if (newCart.length===5){
@@ -27,7 +29,7 @@ const Books = () => {
         setCart(newCart.slice(0,4));
     }
 
-    // Generate Random Data From Cart
+   /*  Generate Random Data From Cart */
     const randDataShow = () => {
         if (cart.length !== 0) {
             const randomIndex = Math.floor(Math.random() * cart.length);
@@ -36,7 +38,7 @@ const Books = () => {
         }
     }
 
-    // Clear Data From Cart
+   /*  Clear Data From Cart */
     const clearData = () => {
         setCart([]);
         setRandom([]);
